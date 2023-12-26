@@ -50,12 +50,13 @@ body {
 body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: var(--clr-gray);
 }
 
 main {
     max-width: 23.438rem;
     margin-inline: auto;
-    margin-block: 4rem;
+    margin-block: 3rem;
     border-radius: 0.5rem; 
     overflow: hidden;
     font-family: var(--ff-body);
@@ -108,6 +109,10 @@ button:hover {
 }
 
 @media (min-width:40.75rem) {
+    body {
+        display: grid;
+        place-content: center;
+    }
     main {
         max-width: 56.25rem;
         display: grid;
