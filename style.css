@@ -1,8 +1,4 @@
-
-/**/
 :root {
-/*Colors*/
-
 /*Primary*/
 
 --clr-Bright-orange: hsl(31, 77%, 52%);
@@ -27,14 +23,7 @@
 
 --fs-body: 0.9375rem;
 --fs-title: 2.5rem;
-}
-
-.attribution { 
-    font-size: 11px; text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
+} 
 
 /* Box sizing rules */
 *,
@@ -64,27 +53,23 @@ body {
 }
 
 main {
-    max-width: 375px;
+    max-width: 23.438rem;
     margin-inline: auto;
     margin-block: 4rem;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem; 
     overflow: hidden;
     font-family: var(--ff-body);
     color: var(--clr-paragraphs);
 }
-@media (min-width:652px) {
-    main {
-        max-width: 900px;
-        display: grid;
-        place-content: center;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .padding {
-        margin-top: 20px;
-    }
-    .btn-padding {
-        margin-top: 100px;
-    }
+.section-style {
+    padding: 3rem 2rem;
+}
+.title {
+    font-family: var(--ff-title);
+    font-size: var(--fs-title);
+    font-weight: var(--fw-title);
+    text-transform: uppercase;
+    color: var(--clr-gray);
 }
 .section-one {
     background-color: var(--clr-Bright-orange);
@@ -92,10 +77,10 @@ main {
 .section-one button {
     color: var(--clr-Bright-orange);
 }
-.section-tow {
+.section-two {
     background-color: var(--clr-cyan);
 }
-.section-tow button{
+.section-two button{
     color: var(--clr-cyan);
 }
 .section-three {
@@ -118,18 +103,22 @@ button:hover {
     background-color: transparent;
     color: var(--clr-gray);
 }
+.btn-padding {
+    margin-top: 1.875rem;
+}
 
-/*Utilitie classes*/
-.sec-style {
-    padding: 3rem 2rem;
-}
-.title {
-    font-family: var(--ff-title);
-    font-size: var(--fs-title);
-    font-weight: var(--fw-title);
-    text-transform: uppercase;
-    color: var(--clr-gray);
-}
-button, .padding {
-    margin-top: 30px;
+@media (min-width:40.75rem) {
+    main {
+        max-width: 56.25rem;
+        display: grid;
+        place-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-block: 0;
+    }
+    .padding {
+        margin-top: 20px;
+    }
+    .btn-padding {
+        margin-top: 100px;
+    }
 }
